@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume - Basic Info</title>
+  <link rel="stylesheet" href="display.css" />
+</head>
+<body>
+  
+  <div id="resume">
+
+    <div class="resume-header">
+      <div class="left-info" id="left-info"></div>
+      <div class="right-info" id="right-info"></div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section-title" id="education-title">Education</div>
+    <div class="education-entry" id="education-entry"></div>
+
+    <!-- Projects Section -->
+    <div class="section-title" id="projects-title">Personal Projects</div>
+    <div id="projects-container"></div>
+
+    <!-- Achievements Section -->
+    <div class="section-title" id="achievements-title">Achievements</div>
+    <div id="achievements-container"></div>
+
+    <!-- Experience Section -->
+    <div class="section-title" id="experience-title">Experience</div>
+    <div id="experience-container"></div>
+
+    <!-- Skills Section -->
+    <div class="section-title" id="skills-title">Skills</div>
+    <div id="skills-container"></div>
+
+    <!-- Certifications Section -->
+    <div class="section-title" id="certification-title">Certifications</div>
+    <div class="certification-entry">
+      <div class="left-info" id="left-infos"></div>
+      <div class="right-info" id="right-infos"></div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="section-title" id="summary-title">Professional Summary</div>
+    <div id="Professional-summary"></div>
+
+  </div>
+
+  <!-- Buttons Outside of #resume -->
+  <button class="no-print" onclick="downloadPDF()">Download Resume as PDF</button>
+  <button class="no-print" onclick="resetLocalStorage()">Reset Resume Data</button>
+
+  <script src="display.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>

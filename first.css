@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2a2835; /* Soft black-plum background */
+  color: #f5f5f5;
+  padding: 2rem;
+}
+
+.firone {
+  max-width: 900px;
+  margin: auto;
+  background: #1f1d2b; /* Card contrast */
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 79, 129, 0.1);
+  border: 1px solid #ff4f8140;
+}
+
+.open h1 {
+  font-size: 1.5rem;
+  color: #ff4f81;
+  margin-bottom: 0.5rem;
+}
+
+.open p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Two-column layout */
+.form-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-column h1 {
+  font-size: 0.9rem;
+  margin: 1rem 0 0.3rem;
+  color: #f0f0f0;
+}
+
+.form-column input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 2px solid #444;
+  background-color: #2a2835;
+  color: #eee;
+  transition: border 0.3s;
+  font-size: 1rem;
+}
+
+.form-column input:focus {
+  outline: none;
+  border-color: #ff4f81;
+  background-color: #2c2c2e;
+}
+
+/* Save Button */
+.four-one {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.four-one button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff4f81;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255, 79, 129, 0.3);
+  transition: background 0.3s ease;
+}
+
+.four-one button:hover {
+  background-color: #e0406e;
+}
+
+/* Optional: Responsive stack on small screens */
+@media (max-width: 700px) {
+  .form-grid {
+    flex-direction: column;
+  }
+}
