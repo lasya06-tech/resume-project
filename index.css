@@ -91,15 +91,21 @@ body {
   color: #ccc;
 }
 
-.hero-buttons .btn-primary,
-.hero-buttons .btn-secondary {
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
   padding: 0.9rem 1.8rem;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
-  margin-right: 1rem;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -107,7 +113,6 @@ body {
   border: none;
   color: #fff;
   box-shadow: 0 6px 12px rgba(255, 79, 129, 0.3);
-  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -118,7 +123,6 @@ body {
   background: transparent;
   border: 2px solid #ff4f81;
   color: #ff4f81;
-  text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -158,13 +162,13 @@ body {
   background: linear-gradient(145deg, #2c2c2e, #1c1c1e);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  border-left: 4px solid #a56eff; /* 👈 NEW accent line */
+  border-left: 4px solid #a56eff;
 }
 
 .service-card:hover {
   transform: scale(1.03);
   background: #333335;
-  border-left: 4px solid #ff4f81; /* 👈 hover switches to pink */
+  border-left: 4px solid #ff4f81;
 }
 
 .service-card h3 {
@@ -178,17 +182,7 @@ body {
   font-weight: 300;
 }
 
-
-
-.service-card:hover {
-  transform: scale(1.03);
-  background: #333335;
-}
-
-
-
-
-
+/* How It Works */
 .how-it-works {
   padding: 5rem 0;
   background: #1c1c1e;
@@ -226,6 +220,7 @@ body {
   color: #ff4f81;
 }
 
+/* Reviews */
 .reviews {
   padding: 5rem 0;
   background: #1c1c1e;
@@ -283,4 +278,33 @@ body {
   font-size: 0.95rem;
   color: #aaa;
   background: #1c1c1e;
+}
+
+/* 📱 Responsive Fix */
+@media (max-width: 600px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
 }
